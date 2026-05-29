@@ -1,0 +1,72 @@
+{
+    "db-prod": {
+        "template_id": 9200,
+        "cores": 4,
+        "memory": 6144,
+        "disk": "hdd-vms",
+        "disk_size": "150G",
+        "bridge": "vmbr6",
+        "cpu": "host",
+        "onboot": 1
+    },
+    "db-test": {
+        "template_id": 9200,
+        "cores": 4,
+        "memory": 6144,
+        "disk": "hdd-vms",
+        "disk_size": "150G",
+        "bridge": "vmbr7",
+        "cpu": "host",
+        "onboot": 1
+    },
+    "app-prod": {
+        "template_id": 9000,
+        "cores": 3,
+        "memory": 6144,
+        "disk": "hdd-vms",
+        "disk_size": "50G",
+        "bridge": "vmbr2",
+        "cpu": "host",
+        "onboot": 1
+    },
+    "app-test": {
+        "template_id": 9000,
+        "cores": 2,
+        "memory": 4096,
+        "disk": "hdd-vms",
+        "disk_size": "50G",
+        "bridge": "vmbr4",
+        "cpu": "host",
+        "onboot": 1
+    },
+    "dev": {
+        "template_id": 9100,
+        "cores": 2,
+        "memory": 2048,
+        "disk": "hdd-vms",
+        "disk_size": "30G",
+        "bridge": "vmbr5",
+        "cpu": "host",
+        "onboot": 0
+    },
+    "ws-core-dc": {
+        "template_id": 9300,
+        "cores": 4,
+        "memory": 4096,
+        "disk": "hdd-vms",
+        "disk_size": "80G",
+        "bridge": "vmbr8",
+        "cpu": "host",
+        "onboot": 0
+    },
+    "ws-core-app": {
+        "template_id": 9300,
+        "cores": 4,
+        "memory": 4096,
+        "disk": "hdd-vms",
+        "disk_size": "80G",
+        "bridge": "vmbr2",
+        "cpu": "host",
+        "onboot": 0
+    }
+}
